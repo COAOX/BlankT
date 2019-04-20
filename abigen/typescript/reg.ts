@@ -4,8 +4,8 @@ export class Type {
 export class Structs {
     name: string
     base: string
-    fields: struct
-    constructor(name: string, base: string, fields: struct) {
+    fields: []
+    constructor(name: string, base: string, fields: []) {
         this.name = name;
         this.base = base;
         this.fields = fields;

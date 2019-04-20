@@ -1,6 +1,10 @@
 # Blank Team
 
-Modified smart contract ide for WebAssembly compatibility, and Typescript to ABI generation for GXChain.
+Modify smart contract ide for WebAssembly compatibility, and generate abi file from Typescript to GXChain ABI.
+
+## ABIgen
+
+Covert languages to GXChain ABI. ABI generation for GXChain using regex.
 
 ## Examples
 
