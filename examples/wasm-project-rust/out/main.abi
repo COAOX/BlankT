@@ -6,8 +6,8 @@
       "name": "alert",
       "base": "",
       "fields": [{
-        name:"s",
-        type:"&str"
+        "name":"s",
+        "type":"&str"
       }]
     },{
       "name": "greet",
