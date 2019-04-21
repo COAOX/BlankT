@@ -6,8 +6,8 @@
       "name": "main",
       "base": "",
       "fields": [{
-        name:"",
-        type:"void"
+        "name":"",
+        "type":"void"
       }]
     },{
       "name": "putc_js",
