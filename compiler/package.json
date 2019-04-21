@@ -1,0 +1,32 @@
+{
+  "name": "gxc-typescript",
+  "version": "1.0.0",
+  "description": "write gxchain smart contract with typescript",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanhaoxiang/gxc-typescript.git"
+  },
+  "keywords": [
+    "gxchain",
+    "smart",
+    "contract",
+    "typescript"
+  ],
+  "author": "lanhaoxiang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lanhaoxiang/gxc-typescript/issues"
+  },
+  "homepage": "https://github.com/lanhaoxiang/gxc-typescript#readme",
+  "devDependencies": {
+    "assemblyscript": "github:gxchain/assemblyscript"
+  },
+  "scripts": {
+    "build": "concurrently \"asc ./src/helloworld.ts -o ./dist/helloworld.wast --optimize --validate --binaryFile ./dist/helloworld.wasm\" \"python Pparser.py ./src/helloworld.ts ./dist/helloworld.abi\" ",
+    "buildtest": "concurrently \"asc ./src/helloworld.ts -o ./dist/helloworld.wast --optimize --validate\"  \"sed -i.bak 's/,/_/g' ./dist/helloworld.wast && rm ./dist/helloworld.wast.bak\""
+  }
+}
